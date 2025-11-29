@@ -33,9 +33,21 @@
       <h2 id="about">Site minimal</h2>
       <p>Test pour le lien appel en ligne vers module photo / traitement image hors ligne avec un site minimal.</p>
 
-      <button onclick="window.location.href='monapp://ouvrir?data=HELLO'">
-        Ouvrir mon app
-      </button>
+      <button id="openAppBtn">Ouvrir mon app</button>
+      <p id="status" style="color: green; font-weight: bold; margin-top: 1rem;"></p>
+    
+      <script>
+        const btn = document.getElementById('openAppBtn');
+        const status = document.getElementById('status');
+    
+        btn.addEventListener('click', () => {
+          // Affiche le message sur la page
+          status.textContent = 'App appelée !';
+    
+          // Tente d'ouvrir l'application
+          window.location.href = 'monapp://ouvrir?data=HELLO';
+        });
+      </script>
     </main>
 
     <footer>
