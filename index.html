@@ -31,7 +31,8 @@
 
     <main>
       <h2 id="about">Site minimal</h2>
-      <p>Test pour le lien appel en ligne vers module photo / traitement image hors ligne avec un site minimal.</p>
+      <p>Test pour le lien appel en ligne vers module photo / traitement image hors ligne avec un site minimal. Depuis le site, on transmet ID = 3353
+key_capture = "TI1ZGRmZjY4ZDc1Y2EwZTI" pour pouvoir accéder au stabtraj.</p>
 
       <button id="openAppBtn">Ouvrir mon app</button>
       <p id="status" style="color: green; font-weight: bold; margin-top: 1rem;"></p>
@@ -45,7 +46,7 @@
           status.textContent = 'App appelée !';
     
           // Tente d'ouvrir l'application
-          window.location.href = 'monapp://ouvrir?data=HELLO';
+          window.location.href = 'monapp://ouvrir?data=HELLO&id=3353&key=TI1ZGRmZjY4ZDc1Y2EwZTI';
         });
       </script>
     </main>
