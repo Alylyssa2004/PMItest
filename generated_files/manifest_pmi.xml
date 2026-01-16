@@ -1,0 +1,20 @@
+
+android.manifest.intent_filters =
+<!-- Custom scheme -->
+<intent-filter>
+    <action android:name="android.intent.action.VIEW"/>
+    <category android:name="android.intent.category.DEFAULT"/>
+    <category android:name="android.intent.category.BROWSABLE"/>
+    <data android:scheme="monapp" android:host="ouvrir"/>
+</intent-filter>
+
+<!-- App Link HTTPS -->
+<intent-filter android:autoVerify="true">
+    <action android:name="android.intent.action.VIEW"/>
+    <category android:name="android.intent.category.DEFAULT"/>
+    <category android:name="android.intent.category.BROWSABLE"/>
+    <data
+        android:scheme="https"
+        android:host="alylyssa2004.github.io"
+        android:pathPrefix="/PMItest/"/>
+</intent-filter>
