@@ -36,9 +36,22 @@ key_capture = "TI1ZGRmZjY4ZDc1Y2EwZTI" pour pouvoir accéder au stabtraj.</p>
 
       <button id="openAppBtn">Ouvrir mon app</button>
       <p id="status" style="color: green; font-weight: bold; margin-top: 1rem;"></p>
-      <a href="https://alylyssa2004.github.io/PMItest/?id=3353&key=mQ3NWU5ZWY2ZDdlZjQzYTE">
-          Ouvrir dans Vulcain Applink
-      </a>
+      <script>
+          const btn = document.getElementById('openAppBtn');
+          const status = document.getElementById('status');
+        
+          const id = "3353";
+          const key = "mQ3NWU5ZWY2ZDdlZjQzYTE";
+          const code = "ADD9S7";
+        
+          btn.addEventListener('click', () => {
+            status.textContent = "Ouverture Applink";
+        
+            // 1) Tentative App Link (prioritaire)
+            window.location.href = `https://alylyssa2004.github.io/PMItest/?id=${id}&key=${key}`;
+          });
+        </script>
+
 
       <script>
         const btn = document.getElementById('openAppBtn');
